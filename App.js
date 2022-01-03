@@ -4,7 +4,9 @@ import AppLoading from 'expo-app-loading';
 import { useFonts, Montserrat_400Regular, Montserrat_500Medium, Montserrat_600SemiBold, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import Home from './components/Home';
+import Details from './components/Details';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +25,7 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
+          <Stack.Screen name="Details" component={Details} options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
     );
