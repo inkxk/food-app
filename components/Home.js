@@ -18,7 +18,6 @@ Feather.loadFont();
 MaterialCommunityIcons.loadFont();
 
 export default Home = ({ navigation }) => {
-  
   const renderCategoryItem = ({ item }) => {
     return (
       <TouchableOpacity>
@@ -37,7 +36,9 @@ export default Home = ({ navigation }) => {
             style={[
               styles.categorySelectWrapper,
               {
-                backgroundColor: item.selected ? colors.white : colors.secondary,
+                backgroundColor: item.selected
+                  ? colors.white
+                  : colors.secondary,
               },
             ]}
           >
